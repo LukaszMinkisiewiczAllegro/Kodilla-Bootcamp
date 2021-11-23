@@ -1,4 +1,10 @@
 def palindrom(word):
+    """
+    func that checks if given word is palindrome
+    Aguments:
+    word: provide word to check
+    
+    """
     new_word = ""
     
     for letter in word[::-1]:
