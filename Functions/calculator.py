@@ -45,10 +45,14 @@ def calculator():
     elif operator == '3':
         info = "Mnoze liczby, wynik to:"
         result = a * b
-    
+
     else:
-        info = "Dziele liczby, wynik to:"
-        result = a / b
+        if b != 0:
+            info = "Dziele liczby, wynik to:"
+            result = a / b
+        else:
+            result = "Niemozliwe!"
+            info = "Nie mozna dzielic przez 0"
 
     logging.info(info)
     print(result)
