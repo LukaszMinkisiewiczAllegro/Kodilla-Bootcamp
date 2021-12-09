@@ -90,3 +90,5 @@ print(test_contacts)
 
 for obj in test_contacts:
     print(obj.contact())
+
+import this
